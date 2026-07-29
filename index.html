@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Post-Its</title>
+      </head>
+      <body>
+
+<div class="postits">
+  <div class="postit">
+    <figure>
+    <img tabindex="1"; class="notes" src="POSTIT1.png" alt="list of cold cuts to buy at the grocery store"/>
+    </figure>
+    <div id="note1" class="content">
+      <p>note 1</p>
+    </div>
+  </div>
+
+  <div class="postit">
+    <figure>
+    <img tabindex="2"; class="notes" src="POSTIT2.png" alt="high score"/>
+    </figure>
+    <div id="note2" class="content">
+      <p>note 2</p>
+    </div>
+  </div>
+
+  <div class="postit">
+    <figure>
+    <img tabindex="3"; class="notes" src="POSTIT3.png" alt="to-do list"/>
+    </figure>
+    <div id="note3" class="content">
+      <p>note 3</p>
+    </div>
+  </div>
+
+  <div class="postit">
+    <figure>
+    <img tabindex="4"; class="notes" src="POSTIT4.png" alt="chords"/>
+    </figure>
+    <div id="note4" class="content">
+      <p>note 4</p>
+    </div>
+  </div>
+</div>
+
+<style>
+.postits {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: wrap;
+  justify-content: center;
+  background: white;
+  overflow: hidden;
+  margin: 5px;
+  padding: 0.25vw;
+  max-width: 90vw;
+}
+.content {
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+#note1 {
+  width: 250px;
+}
+
+#note2 {
+  width: 250px;
+}
+
+#note3 {
+  width: 250px;
+}
+
+#note4 {
+  width: 250px;
+}
+
+@media (min-width: 576px) {
+  .postit {
+    max-width: 40vw;
+  }
+}
+@media (min-width: 768px) {
+  .postit {
+    max-width: 20vw;
+  }
+}
+</style>
+
+      </body>
+</html>
